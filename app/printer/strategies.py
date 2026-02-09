@@ -1,11 +1,5 @@
-from abc import ABC, abstractmethod
+from app.printer.base import PrintBook
 from app.models import Book
-
-
-class PrintBook(ABC):
-    @abstractmethod
-    def print_book(self, book: Book) -> None:
-        pass
 
 
 class ConsolePrint(PrintBook):

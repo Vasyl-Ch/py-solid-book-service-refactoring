@@ -1,5 +1,5 @@
-from app.display import ConsoleDisplay, ReverseDisplay
-from app.printer import ConsolePrint, ReversePrint
+from app.display.strategies import ConsoleDisplay, ReverseDisplay
+from app.printer.strategies import ConsolePrint, ReversePrint
 from app.serializers import JSONSerializer, XMLSerializer
 
 STRATEGIES = {
