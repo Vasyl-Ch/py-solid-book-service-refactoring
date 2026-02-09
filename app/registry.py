@@ -18,7 +18,7 @@ STRATEGIES = {
 }
 
 
-def get_strategy(category, method_type):
+def get_strategy(category: str, method_type: str) -> object:
     strategy_class = STRATEGIES.get(category, {}).get(method_type)
     if not strategy_class:
         raise ValueError(f"Unknown {category} type: {method_type}")
